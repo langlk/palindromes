@@ -14,3 +14,9 @@ describe("String#is_palindrome?") do
     expect("TacoCat".is_palindrome?).to(eq(true))
   end
 end
+
+describe("String#get_palindromes") do
+  it("returns all palindromes in a string as an array") do
+    expect("Bob is a fan of Tacocat".get_palindromes).to(eq(["Bob", "a", "Tacocat"]))
+  end
+end
