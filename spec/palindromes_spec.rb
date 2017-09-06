@@ -13,6 +13,10 @@ describe("String#is_palindrome?") do
   it("ignores case when checking if a word is a palindrome") do
     expect("TacoCat".is_palindrome?).to(eq(true))
   end
+
+  it("returns true if a string is a multi-word palindrome") do
+    expect("Taco cat".is_palindrome?).to(eq(true))
+  end
 end
 
 describe("String#get_palindromes") do

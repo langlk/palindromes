@@ -17,3 +17,6 @@
 * Checks for palindromes in a text file.
   * Example input: "Bob is a fan of Tacocat. Ana and Anna are not, they prefer EvilOlive."
   * Example output: ["Bob", "a", "Tacocat", "Ana", "Anna", "EvilOlive"]
+* Checks if a string is a multi-word palindrome.
+  * Example input: "Taco cat"
+  * Example output: true

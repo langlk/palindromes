@@ -1,6 +1,7 @@
 class String
   def is_palindrome?
-    if self.downcase == self.downcase.reverse
+    temp_string = self.gsub(/[^a-z0-9]/i, "")
+    if temp_string.downcase == temp_string.downcase.reverse
       return true
     else
       return false
