@@ -11,11 +11,18 @@ class String
   def get_palindromes
     palindromes = []
     words = self.split
-    words.each do |word|
-      temp_word = word.gsub(/(^[^a-z0-9]*|[^a-z0-9]*$)/i, '')
-      if temp_word.is_palindrome?
-        palindromes.push(temp_word)
+    i = 0
+    while i < words.length
+      j = i + 1
+      while j <= words.length
+        temp_string = words[i...j].join(" ")
+        temp_string = temp_string.gsub(/(^[^a-z0-9]*|[^a-z0-9]*$)/i, '')
+        if temp_string.is_palindrome?
+          palindromes.push(temp_string)
+        end
+        j += 1
       end
+      i += 1
     end
     return palindromes
   end

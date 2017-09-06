@@ -20,3 +20,9 @@
 * Checks if a string is a multi-word palindrome.
   * Example input: "Taco cat"
   * Example output: true
+* Gets all single and multi-word palindromes in a string.
+  * Example input: "Bob likes taco cat"
+  * Example output: ["Bob", "taco cat"]
+* Gets all single and multi-word palindromes in a file.
+  * Example input: "Bob is a fan of Tacocat. Ana and Anna are not, they prefer Evil Olive. Are we not pure? “No sir!” Panama’s moody Noriega brags. “It is garbage!” Irony dooms a man; a prisoner up to new era."
+  * Example output: ["Bob", "Tacocat", "Ana", "Anna", "Evil Olive", "Are we not pure No sir Panamas moody Noriega brags It is garbage Irony dooms a man a prisoner up to new era", "a", "a"]
